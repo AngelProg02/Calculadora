@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
+  align-items: center;
+  margin-left: 0%;
+}
+
+#numero8 {
+  margin-top: 5px;
+}
+
+#tamanio {
+  width: 20cm;
+}
