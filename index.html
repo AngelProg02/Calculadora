@@ -10,40 +10,155 @@
   <head> </head>
   <body>
     <div class="container">
-      <input type="text" id="resultado" value="0" readonly="true" />
+      <input
+        type="text"
+        id="MostraResultado"
+        id="num1"
+        id="num2"
+        value="0"
+        readonly="true"
+      />
     </div>
 
     <div class="container">
       <div id="alineacion" class="row">
         <div class="col">
           <div class="row" id="invisible">.</div>
-          <div class="row"><input type="button" value="7" id="numero8" /></div>
-          <div class="row"><input type="button" value="4" /></div>
-          <div class="row"><input type="button" value="1" /></div>
+          <div class="row">
+            <input
+              type="button"
+              value="7"
+              id="numero7"
+              onclick="mostrarNumeros('7')"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="4"
+              id="numero4"
+              onclick="mostrarNumeros('4')"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="1"
+              id="numero1"
+              onclick="mostrarNumeros('1')"
+            />
+          </div>
           <div class="row" id="invisible2">.</div>
         </div>
         <div class="col">
           <div class="row" id="invisible3">.</div>
           <div class="row">
-            <input type="button" value="8" id="numero8" class="tamanio" />
+            <input
+              type="button"
+              value="8"
+              id="numero8"
+              class="tamanio"
+              onclick="mostrarNumeros('8')"
+            />
           </div>
-          <div class="row"><input type="button" value="5" /></div>
-          <div class="row"><input type="button" value="2" /></div>
-          <div class="row"><input type="button" value="0" /></div>
+          <div class="row">
+            <input
+              type="button"
+              value="5"
+              id="numero5"
+              onclick="mostrarNumeros('5')"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="2"
+              id="numero2"
+              onclick="mostrarNumeros('2')"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="0"
+              id="numero0"
+              onclick="mostrarNumeros('0')"
+            />
+          </div>
         </div>
         <div class="col-sm">
-          <div class="row"><input type="button" value="C" /></div>
-          <div class="row"><input type="button" value="9" /></div>
-          <div class="row"><input type="button" value="6" /></div>
-          <div class="row"><input type="button" value="3" /></div>
-          <div class="row"><input type="button" value="," /></div>
+          <div class="row">
+            <input type="button" value="C" onclick="Limpiar('0')" />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="9"
+              id="numero9"
+              onclick="mostrarNumeros('9')"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="6"
+              id="numero6"
+              onclick="mostrarNumeros('6')"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="3"
+              id="numero3"
+              onclick="mostrarNumeros('3')"
+            />
+          </div>
+          <div class="row">
+            <input type="button" value="," onclick="MostrarNumeros(',')" />
+          </div>
         </div>
         <div class="col">
-          <div class="row"><input type="button" value="/" /></div>
-          <div class="row"><input type="button" value="x" /></div>
-          <div class="row"><input type="button" value="-" /></div>
-          <div class="row"><input type="button" value="+" /></div>
-          <div class="row"><input type="button" value="=" /></div>
+          <div class="row">
+            <input
+              type="button"
+              value="/"
+              id="dividir"
+              onclick="operadores('/')"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="x"
+              id="multiplicar"
+              onclick="operadores('x')"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="-"
+              id="restar"
+              onclick="operadores('-')"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="+"
+              id="sumar"
+              onclick="operadores('+')"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              value="="
+              id="IrAlresultado"
+              onclick="resultado('=')"
+            />
+          </div>
         </div>
       </div>
     </div>
